@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--    <bean id="bookService"-->
+<!--          class="me.whiteship.springapplicationcontext.BookService">-->
+<!--         <property name="bookRepository" ref="bookRepository" />-->
+<!--&lt;!&ndash;        전자는 세터, 후자는 다른 빈의 id 에서 가져온 bookRepository임 &ndash;&gt;-->
+
+<!--    </bean>-->
+<!--    <bean id="bookRepository"-->
+<!--          class="me.whiteship.springapplicationcontext.BookRepository"></bean>-->
+
+    <context:component-scan base-package="me.whiteship.springapplicationcontext"/>
+
+
+</beans>
